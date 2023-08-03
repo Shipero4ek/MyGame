@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+/* css-work*/
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: blue;
+  height: 80px;
+  width: 100%;
+}
+
+label.logo {
+  color: white;
+  font-size: 36px;
+  padding: 0 100px;
+  line-height: 80px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block; /* Add this line to make the links inline-block */
+  padding: 0 10px; /* Add padding to create some space between the icon and text */
+}
+
+a.active,
+a:hover {
+  background: #1b9bff;
+}
+#check{
+  display: none;
+}
+
+.checkbtn {
+  font-size: 30px;
+  line-height: 80px;
+  float: right;
+  color: white;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    padding-left: 50px;
+    font-size: 30px;
+  }
+
+  nav ul li {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 850px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    display: none;
+  }
+  .show-menu ul{
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+    top: 80px;
+    left:0;
+    text-align:center;
+    background: #1b9bff;
+   }
+}
+.show-menu ul {
+  display: block;
+ 
+}
+.button{
+  width: 300px;
+  height: 50px;
+  border-radius: 25px;
+  border-color: black;
+  border-width: 10px;
+  border-color: azure;
+  font-size: 1rem;
+  color: rgb(155, 44, 165);
+  text-transform: uppercase;
+
+}
+.button:hover {
+  border-color: rgb(49, 49, 49);
+  border-width: 15px;
+  background-color: rgb(231, 217, 217);
+  border-radius: 35px; /* Adjust the border-radius for the hover state if needed */
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+h3{
+  font-size: 1.75rem;
+}
+h1{
+  font-size: 3rem;
+}
+main{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+    align-items: center;
+}
+.upper-main{
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+}
+.if-win {
+  background-color: rgb(74, 199, 74);
+  width: 500px;
+  height: 300px;
+  display: none;
+  position: fixed; /* Use "fixed" instead of "absolute" for positioning */
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: azure;
+  align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+.if-win p{
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+.if-win .close-window {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.if-win .close-window:hover {
+  color: red;
+}
+
+.if-win .close-window i {
+  pointer-events: none; /* This will prevent the click event from triggering on the icon itself */
+}
+.try-again{
+  width: 120px;
+  height: 50px;
+  background-color: rgb(247, 64, 64);
+  border-radius: 25px;
+  font-size: 1.25rem;
+  color: azure;
+  margin-top: 50px;
+}
+.try-again:hover{
+border-width:10px;
+border-color:whitesmoke;
+}

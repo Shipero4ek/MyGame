@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+    <nav>
+     <div class="menu wrapper">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn"> <!-- Add the "for" attribute with the value "check" -->
+        <i class="fas fa-bars"></i>
+      </label>
+      <label for="" class="logo">DesignX</label>
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">team</a></li>
+        <li><a href="#">glory</a></li>
+        <li><a href="#">just</a></li>
+        <li><a href="#">back</a></li>
+      </ul>
+     </div>
+    </nav>
+    <main>
+      <div class="upper-main">
+        <h3>get 100 so fast as you can</h3>
+        <h1 class="our-number">0</h1>
+      </div>
+      <div class="buttons">
+        <button class="button plus">
+          +1
+        </button>
+        <button class="button minus">
+          -1
+        </button>
+        <button class="button multiply">
+          *5
+        </button>
+        <button class="button plus-random-number">
+          adding random number
+        </button>
+        <button class="button new-game">
+          new try
+        </button>
+      </div>
+      <div class="if-win">
+        <button class="close-window">
+          <i class="fas fa-times"></i>
+        </button>
+        <h3>It is 100. you have won it!</h1>
+          <p class="tries">0</p>
+          <button class="try-again">try again</button>
+      </div>
+      
+    </main>
+    
+
+    <script src="./index.js"></script>
+  </body>
+</html>
